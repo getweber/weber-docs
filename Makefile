@@ -8,7 +8,7 @@ env: .env/.up-to-date
 	touch .env/.up-to-date
 
 doc: env
-	.env/bin/sphinx-build -a -E . build
+	.env/bin/sphinx-build -a -E doc build
 
 .PHONY: doc
 

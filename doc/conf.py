@@ -108,6 +108,8 @@ todo_include_todos = False
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
+import alabaster
+html_theme_path = [alabaster.get_path()]
 html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
