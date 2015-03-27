@@ -58,6 +58,12 @@ Contents
    database
    testing
    alternative_python
+   
+
+Acknowledgements
+================
+
+Many special thanks and credit goes to `Roey Darwish Dror <https://github.com/r-darwish>`_ for helping out with lots of features, bug fixes, and documentation.
 
 
 
