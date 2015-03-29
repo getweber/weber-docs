@@ -44,7 +44,7 @@ Using Vagrant_ is recommended to make sure that your application can be deployed
 Docker
 ^^^^^^
 
-Running ``manage.py docker build`` builds a Docker_ image for running the application. The Docker image isn't provisioned by Ansible_, but the APT packages list is taken from the Ansible file in ``ansible/roles/common/vars/main.yml``. Despite the official Docker recommendation of "one process per image", we belive that some components should be packed in a single container. The Docker container contains uWSGI_, NGINX_ and a Celery_ worker in case it's included in your Weber variation. A database container should be linked to this container.
+Running ``manage.py docker build`` builds a Docker_ image for running the application. The Docker image isn't provisioned by Ansible_, but the APT packages list is taken from the Ansible file in ``ansible/roles/common/vars/main.yml``. Despite the official Docker recommendation of "one process per image", we believe that some components should be packed in a single container. The Docker container contains uWSGI_, NGINX_ and a Celery_ worker in case it's included in your Weber variation. A database container should be linked to this container.
 
 Running ``manage.py docker start`` will start your image, as well as a database image if needed, by using docker-compose_
 
