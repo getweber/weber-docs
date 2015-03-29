@@ -55,10 +55,11 @@ Contents
    project_layout
    dependencies
    manage_app
+   background_tasks
    database
    testing
    alternative_python
-   
+
 
 Acknowledgements
 ================
