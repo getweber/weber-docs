@@ -10,11 +10,6 @@ Developing
 
 Developing is done by running ``manage.py testserver``. The directory ``.env`` will be created and the Flask testing server will be executed. Depending on the variation of Weber, additional components might be launched in different tmux windows.
 
-Managing the Database
----------------------
-
-To be written.
-
 Testing
 -------
 
