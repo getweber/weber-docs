@@ -61,6 +61,8 @@ Contents
    database
    testing
    alternative_python
+   cookbook
+   faq
 
 
 Acknowledgements
