@@ -36,19 +36,8 @@ Using Vagrant_ is recommended to make sure that your application can be deployed
 
 .. note:: Contrary to Ansible, Vagrant isn't installed by manage.py. You should manually install Vagrant on you development machine if you with to use it.
 
-Docker
-^^^^^^
-
-Running ``manage.py docker build`` builds a Docker_ image for running the application. The Docker image isn't provisioned by Ansible_, but the APT packages list is taken from the Ansible file in ``ansible/roles/common/vars/main.yml``. Despite the official Docker recommendation of "one process per image", we believe that some components should be packed in a single container. The Docker container contains uWSGI_, NGINX_ and a Celery_ worker in case it's included in your Weber variation. A database container should be linked to this container.
-
-Running ``manage.py docker start`` will start your image, as well as a database image if needed, by using docker-compose_
-
-.. note:: Contrary to Ansible, Docker client and Docker Compose aren't installed by manage.py. You should manually install the Docker client (and docker-compose if you wish to use the docker start command) manually on your development machine.
-
 .. _Ansible: http://www.ansible.com/home
 .. _Vagrant: https://www.vagrantup.com/
-.. _Docker: https://www.docker.com/
 .. _NGINX: http://nginx.org/en/
 .. _uWSGI: https://uwsgi-docs.readthedocs.org/en/latest/
-.. _docker-compose: https://docs.docker.com/compose/
 .. _Celery: http://www.celeryproject.org/

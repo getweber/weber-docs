@@ -16,7 +16,7 @@ The testing server monitors these files to pick up changes, so you usually won't
 Backend Other Dependencies
 --------------------------
 
-Non-Pythonic dependencies should be installed manually on the development machine. Ansible_ or Docker_ will take care of installing these dependencies in the production environment, so they have to be specified in ``ansible/roles/common/vars/main.yml``. Even if you deploy using Docker instead of Ansible, :ref:`manage_app` will install these specified packages inside the Docker image.
+Non-Pythonic dependencies should be installed manually on the development machine. Ansible_ will take care of installing these dependencies in the production environment, so they have to be specified in ``ansible/roles/common/vars/main.yml``.
 
 Frontend Dependencies
 ---------------------
@@ -24,5 +24,4 @@ Frontend Dependencies
 Frontend dependencies are only handled by weber-frontend. They're specified in ``webapp/bower.json`` and ``webapp/package.json``. The test server runs Broccoli_ to monitor these files for changes, so you usually won't have to restart it when you modify these files.
 
 .. _Ansible: http://www.ansible.com/home
-.. _Docker: https://www.docker.com/
 .. _Broccoli: https://github.com/broccolijs/broccoli

@@ -18,8 +18,6 @@ Running the test server also takes care of running a Celery worker. However, you
 
 Ansible takes care of installing and launching both Redis and a Celery worker on the production machine. This also applies to Vagrant.
 
-Docker takes care of installing and launching both Redis and a Ceelry worker inside the container.
-
 .. _Celery: http://www.celeryproject.org/
 .. _Redis: http://redis.io/
 .. _RabbitMQ: https://www.rabbitmq.com/

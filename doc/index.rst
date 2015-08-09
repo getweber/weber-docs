@@ -14,7 +14,7 @@ Weber is a set of template projects for starting production-ready webapps, enabl
 Weber provides:
 
 #. Backend code based on Flask_
-#. Out-of-the-box deployment via Ansible_, Vagrant_ or Docker_
+#. Out-of-the-box deployment via Ansible_, Vagrant_
 #. Unit tests foundation for testing either the fully deployed app or a mock using Flask-Loopback_
 #. Background jobs using Celery_ (Optional)
 #. User management using Flask-Security_ (Optional)
@@ -81,7 +81,6 @@ Indices and tables
 
 .. _Ansible: http://www.ansible.com/home
 .. _Vagrant: https://www.vagrantup.com/
-.. _Docker: https://www.docker.com/
 .. _Flask: http://flask.pocoo.org/
 .. _Flask-Loopback: https://github.com/vmalloc/flask-loopback
 .. _Ember.js: http://emberjs.com/
